@@ -19,6 +19,8 @@ import (
 	"fmt"
 	"log"
 	"sync"
+
+	"github.com/sirupsen/logrus"
 )
 
 // Logger provides an abstract interface for logging from Reporters.
@@ -44,7 +46,10 @@ func (l *stdLogger) Error(msg string) {
 
 // Infof logs a message at info priority
 func (l *stdLogger) Infof(msg string, args ...interface{}) {
-	log.Printf(msg, args...)
+	logrus.SetFormatter(&logrus.JSONFormatter{})
+	logrus.WithFields(logrus.Fields{
+		"severity": 200,
+	}).Info(args...)
 }
 
 // NullLogger is implementation of the Logger interface that is no-op
