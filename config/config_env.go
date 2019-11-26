@@ -25,7 +25,7 @@ import (
 	"github.com/opentracing/opentracing-go"
 	"github.com/pkg/errors"
 
-	"github.com/uber/jaeger-client-go"
+	"github.com/yulintsai/jaeger-client-go"
 )
 
 const (

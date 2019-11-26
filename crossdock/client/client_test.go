@@ -23,11 +23,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/crossdock/common"
-	"github.com/uber/jaeger-client-go/crossdock/log"
-	"github.com/uber/jaeger-client-go/crossdock/server"
-	jlog "github.com/uber/jaeger-client-go/log"
+	"github.com/yulintsai/jaeger-client-go"
+	"github.com/yulintsai/jaeger-client-go/crossdock/common"
+	"github.com/yulintsai/jaeger-client-go/crossdock/log"
+	"github.com/yulintsai/jaeger-client-go/crossdock/server"
+	jlog "github.com/yulintsai/jaeger-client-go/log"
 )
 
 func TestCrossdock(t *testing.T) {

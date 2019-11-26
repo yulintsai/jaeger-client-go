@@ -26,11 +26,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	"github.com/uber/jaeger-lib/metrics/metricstest"
+	"github.com/yulintsai/jaeger-lib/metrics/metricstest"
 
-	"github.com/uber/jaeger-client-go/internal/baggage"
-	"github.com/uber/jaeger-client-go/log"
-	"github.com/uber/jaeger-client-go/utils"
+	"github.com/yulintsai/jaeger-client-go/internal/baggage"
+	"github.com/yulintsai/jaeger-client-go/log"
+	"github.com/yulintsai/jaeger-client-go/utils"
 )
 
 type tracerSuite struct {

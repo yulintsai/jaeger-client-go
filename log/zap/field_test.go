@@ -18,7 +18,7 @@ import (
 	"context"
 	"testing"
 
-	jaeger "github.com/uber/jaeger-client-go"
+	jaeger "github.com/yulintsai/jaeger-client-go"
 
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/stretchr/testify/assert"

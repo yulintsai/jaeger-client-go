@@ -22,11 +22,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	mTestutils "github.com/uber/jaeger-lib/metrics/metricstest"
+	mTestutils "github.com/yulintsai/jaeger-lib/metrics/metricstest"
 
-	"github.com/uber/jaeger-client-go/log"
-	"github.com/uber/jaeger-client-go/testutils"
-	"github.com/uber/jaeger-client-go/thrift-gen/sampling"
+	"github.com/yulintsai/jaeger-client-go/log"
+	"github.com/yulintsai/jaeger-client-go/testutils"
+	"github.com/yulintsai/jaeger-client-go/thrift-gen/sampling"
 )
 
 func TestRemoteSamplerOptions(t *testing.T) {

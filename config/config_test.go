@@ -25,12 +25,12 @@ import (
 	"github.com/opentracing/opentracing-go/ext"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/uber/jaeger-lib/metrics"
-	"github.com/uber/jaeger-lib/metrics/metricstest"
+	"github.com/yulintsai/jaeger-lib/metrics"
+	"github.com/yulintsai/jaeger-lib/metrics/metricstest"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/log"
-	"github.com/uber/jaeger-client-go/transport"
+	"github.com/yulintsai/jaeger-client-go"
+	"github.com/yulintsai/jaeger-client-go/log"
+	"github.com/yulintsai/jaeger-client-go/transport"
 )
 
 func TestNewSamplerConst(t *testing.T) {

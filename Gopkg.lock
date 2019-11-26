@@ -147,7 +147,7 @@
 
 [[projects]]
   digest = "1:0ec60ffd594af00ba1660bc746aa0e443d27dd4003dee55f9d08a0b4ff5431a3"
-  name = "github.com/uber/jaeger-lib"
+  name = "github.com/yulintsai/jaeger-lib"
   packages = [
     "metrics",
     "metrics/metricstest",
@@ -306,9 +306,9 @@
     "github.com/stretchr/testify/assert",
     "github.com/stretchr/testify/require",
     "github.com/stretchr/testify/suite",
-    "github.com/uber/jaeger-lib/metrics",
-    "github.com/uber/jaeger-lib/metrics/metricstest",
-    "github.com/uber/jaeger-lib/metrics/prometheus",
+    "github.com/yulintsai/jaeger-lib/metrics",
+    "github.com/yulintsai/jaeger-lib/metrics/metricstest",
+    "github.com/yulintsai/jaeger-lib/metrics/prometheus",
     "go.uber.org/atomic",
     "go.uber.org/zap",
     "go.uber.org/zap/zapcore",

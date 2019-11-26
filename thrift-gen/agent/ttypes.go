@@ -6,9 +6,9 @@ package agent
 import (
 	"bytes"
 	"fmt"
-	"github.com/uber/jaeger-client-go/thrift"
-	"github.com/uber/jaeger-client-go/thrift-gen/jaeger"
-	"github.com/uber/jaeger-client-go/thrift-gen/zipkincore"
+	"github.com/yulintsai/jaeger-client-go/thrift"
+	"github.com/yulintsai/jaeger-client-go/thrift-gen/jaeger"
+	"github.com/yulintsai/jaeger-client-go/thrift-gen/zipkincore"
 )
 
 // (needed to ensure safety because of naive import list construction.)

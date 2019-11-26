@@ -24,7 +24,7 @@ import (
 	"github.com/opentracing/opentracing-go/ext"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/uber/jaeger-lib/metrics/metricstest"
+	"github.com/yulintsai/jaeger-lib/metrics/metricstest"
 )
 
 func initMetrics() (*metricstest.Factory, *Metrics) {

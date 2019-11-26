@@ -36,11 +36,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/uber/jaeger-client-go/thrift"
+	"github.com/yulintsai/jaeger-client-go/thrift"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/log"
-	"github.com/uber/jaeger-client-go/thrift-gen/zipkincore"
+	"github.com/yulintsai/jaeger-client-go"
+	"github.com/yulintsai/jaeger-client-go/log"
+	"github.com/yulintsai/jaeger-client-go/thrift-gen/zipkincore"
 )
 
 const spanPath = "/api/v1/spans"

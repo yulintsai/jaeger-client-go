@@ -21,10 +21,10 @@ import (
 
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/stretchr/testify/assert"
-	u "github.com/uber/jaeger-lib/metrics/metricstest"
+	u "github.com/yulintsai/jaeger-lib/metrics/metricstest"
 
 	"github.com/opentracing/opentracing-go/ext"
-	jaeger "github.com/uber/jaeger-client-go"
+	jaeger "github.com/yulintsai/jaeger-client-go"
 )
 
 func ExampleObserver() {

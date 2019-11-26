@@ -19,7 +19,7 @@ import (
 	"net"
 )
 
-// This code is borrowed from https://github.com/uber/tchannel-go/blob/dev/localip.go
+// This code is borrowed from https://github.com/yulintsai/tchannel-go/blob/dev/localip.go
 
 // scoreAddr scores how likely the given addr is to be a remote address and returns the
 // IP to use when listening. Any address which receives a negative score should not be used.

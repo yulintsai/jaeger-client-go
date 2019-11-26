@@ -27,10 +27,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/internal/throttler"
-	"github.com/uber/jaeger-client-go/log"
-	"github.com/uber/jaeger-lib/metrics/metricstest"
+	"github.com/yulintsai/jaeger-client-go"
+	"github.com/yulintsai/jaeger-client-go/internal/throttler"
+	"github.com/yulintsai/jaeger-client-go/log"
+	"github.com/yulintsai/jaeger-lib/metrics/metricstest"
 )
 
 var _ throttler.Throttler = &Throttler{}

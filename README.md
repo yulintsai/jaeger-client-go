@@ -5,8 +5,8 @@
 Instrumentation library that implements an
 [OpenTracing Go](https://github.com/opentracing/opentracing-go) Tracer for Jaeger (https://jaegertracing.io).
 
-**IMPORTANT**: The library's import path is based on its original location under `github.com/uber`. Do not try to import it as `github.com/jaegertracing`, it will not compile. We might revisit this in the next major release.
-  * :white_check_mark: `import "github.com/uber/jaeger-client-go"`
+**IMPORTANT**: The library's import path is based on its original location under `github.com/yulintsai`. Do not try to import it as `github.com/jaegertracing`, it will not compile. We might revisit this in the next major release.
+  * :white_check_mark: `import "github.com/yulintsai/jaeger-client-go"`
   * :x: `import "github.com/jaegertracing/jaeger-client-go"`
 
 ## How to Contribute
@@ -21,7 +21,7 @@ For example, Jaeger backend imports this library like this:
 
 ```toml
 [[constraint]]
-  name = "github.com/uber/jaeger-client-go"
+  name = "github.com/yulintsai/jaeger-client-go"
   version = "2.17"
 ```
 
@@ -31,15 +31,15 @@ we recommend using semantic versions for dependencies.  The error  may be fixed 
 `make install` (it will install `dep` if you don't have it):
 
 ```shell
-go get -u github.com/uber/jaeger-client-go/
-cd $GOPATH/src/github.com/uber/jaeger-client-go/
+go get -u github.com/yulintsai/jaeger-client-go/
+cd $GOPATH/src/github.com/yulintsai/jaeger-client-go/
 git submodule update --init --recursive
 make install
 ```
 
 ## Initialization
 
-See tracer initialization examples in [godoc](https://godoc.org/github.com/uber/jaeger-client-go/config#pkg-examples)
+See tracer initialization examples in [godoc](https://godoc.org/github.com/yulintsai/jaeger-client-go/config#pkg-examples)
 and [config/example_test.go](./config/example_test.go).
 
 ### Environment variables
@@ -100,14 +100,14 @@ example: `name:jaeger.traces, state:started, sampled:y`. See [metrics.go](./metr
 file for the full list and descriptions of emitted metrics.
 
 The monitoring backend is represented by the `metrics.Factory` interface from package
-[`"github.com/uber/jaeger-lib/metrics"`](https://github.com/jaegertracing/jaeger-lib/tree/master/metrics).  An implementation
+[`"github.com/yulintsai/jaeger-lib/metrics"`](https://github.com/jaegertracing/jaeger-lib/tree/master/metrics).  An implementation
 of that interface can be passed as an option to either the Configuration object or the Tracer
 constructor, for example:
 
 ```go
 import (
-    "github.com/uber/jaeger-client-go/config"
-    "github.com/uber/jaeger-lib/metrics/prometheus"
+    "github.com/yulintsai/jaeger-client-go/config"
+    "github.com/yulintsai/jaeger-lib/metrics/prometheus"
 )
 
     metricsFactory := prometheus.New()
@@ -129,7 +129,7 @@ by the [Logger](logger.go) interface. A logger instance implementing
 this interface can be set on the `Config` object before calling the
 `New` method.
 
-Besides the [zap](https://github.com/uber-go/zap) implementation
+Besides the [zap](https://github.com/yulintsai-go/zap) implementation
 bundled with this package there is also a [go-kit](https://github.com/go-kit/kit)
 one in the [jaeger-lib](https://github.com/jaegertracing/jaeger-lib) repository.
 
@@ -300,8 +300,8 @@ defer span.finish()
 [Apache 2.0 License](LICENSE).
 
 
-[doc-img]: https://godoc.org/github.com/uber/jaeger-client-go?status.svg
-[doc]: https://godoc.org/github.com/uber/jaeger-client-go
+[doc-img]: https://godoc.org/github.com/yulintsai/jaeger-client-go?status.svg
+[doc]: https://godoc.org/github.com/yulintsai/jaeger-client-go
 [ci-img]: https://travis-ci.org/jaegertracing/jaeger-client-go.svg?branch=master
 [ci]: https://travis-ci.org/jaegertracing/jaeger-client-go
 [cov-img]: https://codecov.io/gh/jaegertracing/jaeger-client-go/branch/master/graph/badge.svg

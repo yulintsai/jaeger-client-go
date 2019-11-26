@@ -18,7 +18,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/uber/jaeger-lib/metrics/metricstest"
+	"github.com/yulintsai/jaeger-lib/metrics/metricstest"
 )
 
 func TestNewMetrics(t *testing.T) {

@@ -25,13 +25,13 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/uber/jaeger-lib/metrics"
-	"github.com/uber/jaeger-lib/metrics/metricstest"
+	"github.com/yulintsai/jaeger-lib/metrics"
+	"github.com/yulintsai/jaeger-lib/metrics/metricstest"
 	"go.uber.org/atomic"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/internal/baggage"
-	thrift "github.com/uber/jaeger-client-go/thrift-gen/baggage"
+	"github.com/yulintsai/jaeger-client-go"
+	"github.com/yulintsai/jaeger-client-go/internal/baggage"
+	thrift "github.com/yulintsai/jaeger-client-go/thrift-gen/baggage"
 )
 
 const (
